@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <nav>
+        <div class="brandLogo">
+            <div class="logo"></div>
+            <a href="#" class="brand">Unicef</a>
+        </div>      
+        <ul class="navigation">
+            <li><a href="#laConf" class="active">Un sol para los chicos</a></li>
+            <li><a href="#oradores">Oradores</a></li>
+            <li><a href="#middle">El lugar y la fecha</a></li>
+            <li><a href="#anotate">Vos tambien podes ser Orador</a></li>
+            <li><a href="#"><span class="ticket">Comprar tickets</span></a></li>
+            <li><a href="vistas/login.jsp"><span class="ticket">Login</span></a></li>
+        </ul>
+    </nav>
+    <header id="laConf">
+        <div class="slider">
+            <div class="sliderText">
+                <h2>Ciclo de charlas en el festival un sol para los chicos!</h2>
+                <p>Un sol para los chicos este año incorporo una nueva propuesta: Te invita a formar parte de este gran evento que tiene como finalidad principal recauda fondos para ayudar a las infancias. Si sos queres formar parte de los oradores que hablaran sobre crianza respetuosa y los derechos de los niños, anotate. Te esperamos!
+                </p>
+                <a href="#" class="btnWhite">Quiero participar</a>
+                <a href="#" class="btnTicket">Comprar tickets</a>
+            </div>
+            <div class="overlay"></div>
+            <ul>
+                <li><img src="images/unsolparaloschicos.jpg" alt="un sol para los chicos"></li>
+                            
+            </ul>
+        </div>
+    </header>
+    <section class="grupos" id="grupos">
+        <h3>CONOCE A LOS</h3>
+        <h2>ORADORES</h2>
+        <div class="cardGroup">
+            <div class="card">
+                <div class="cardImage"><img src="images/maritchuseitun.jpg" alt="maritchu seitun"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="javaScript">crianza respetuosa</div>
+                        <div class="react">criar con empatia</div>
+                        <h4>Maritchu Seitun</h4>
+                    </div>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
+                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage"><img src="images/lucasraspall.jpg" alt="lucas raspall"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="javaScript">Neurociencias</div>
+                        <div class="react"> crianza y limites</div>
+                        <h4>Lucas Raspall</h4>
+                    </div>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
+                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage"><img src="images/sabrinacritzmann.jpg" alt="sabrina crizmann"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="negocios">crianza respetuosa</div>
+                        <div class="startups"> hoy no es siempre</div>
+                        <h4> Sabrina Critzmann</h4>
+                    </div>
+                    <div class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Praesentium, minima! Libero consequatur minus veritatis cum, quasi debitis nam minima 
+                        odit omnis cumque architecto, labore non assumenda. Lorem ipsum dolor sit amet consectetur!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="vistas/verOradores.jsp"
+               style="background-color: green; color: white; padding: 10px 20px; text-decoration: none; border: none; cursor: pointer; margin: 10px 0;">
+                Ver otras bandas
+            </a>
+        </div>
+    </section>    
+    <section class="middle" id="middle" style="margin-top: 20px;">
+        <img src= "images/unsolparaloschicos1.jpg" class="middleImage" alt="un sol para los chicos">
+        <div class="middleText">
+            <h3>Bs As - Octubre</h3>
+            <p> A partir de las 16 horas, preparate para vivir una tarde mágica en donde tendrás la posibilidad de ayudar a las chicas y chicos que más lo necesitan. Además, disfrutarás de musicales en vivo, juegos, sorteos y mucho más. #UnSol2023 | ¡UN SOL PARA LOS CHICOS VUELVE EL SÁBADO 12 DE AGOSTO!
+            </p>
+            <a href="#" class="btnWhite">Conocé más</a>
+        </div>
+
+    </section>
+    <section class="anotate" id="anotate">
+        <h3>CONVIÉRTETE EN UNA</h3>
+        <h2>DE NUESTROS ORADORES</h2>
+        <p>Anótate como orador para dar tu <a href="#" class="ignite">charla</a>. Cuéntanos sobre la tematica elegida</p>
+        <form action="registroOrador" method="post">
+            <div class="inputGroup">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+            <textarea name="tema" id="tema" cols="30" rows="5" placeholder="Contanos de tu charla"></textarea>
+            <p class="info">Recuerda incluir el nombre de tu charla</p>
+            <input type="submit" id="btnEnviar" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <ul class="footer">
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Un sol para los chicos</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
